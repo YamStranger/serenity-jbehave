@@ -20,6 +20,7 @@ import org.jbehave.core.reporters.StoryReporterBuilder;
 import org.jbehave.core.steps.ParameterConverters;
 import org.junit.internal.AssumptionViolatedException;
 
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Properties;
 
@@ -66,7 +67,7 @@ public class SerenityJBehave {
                                 .withPathResolver(new FilePrintStreamFactory.ResolveToPackagedName())
                                 .withFailureTrace(true).withFailureTraceCompression(true)
                                 .withReporters(new SerenityReporter(systemConfiguration)))
-                .useStoryLoader(new UTF8StoryLoader())
+                .useStoryLoader(new StoryLoader(StandardCharsets.UTF_8))
                 .useFailureStrategy(new IgnoreAssumptionViolations());
     }
 
