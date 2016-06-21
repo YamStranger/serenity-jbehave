@@ -1,10 +1,7 @@
 ## Serenity BDD JBehave change Log
 
-### upcoming (2016/06/07 21:34 +00:00)
+### upcoming (2016/06/21 18:18 +00:00)
  
-**Pull requests:**
- 
-- [#91](https://github.com/serenity-bdd/serenity-jbehave/pull/91) Tagging strategies tests ([@YamStranger](https://github.com/YamStranger))
  
 **Commits:**
  
